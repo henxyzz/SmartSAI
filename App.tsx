@@ -227,7 +227,11 @@ const App: React.FC = () => {
   if (!isAuthenticated && showAuth) return <AuthSystem onSuccess={(u) => { setUser(u); setIsAuthenticated(true); localStorage.setItem('ssp_user', JSON.stringify(u)); }} />;
 
   return (
-    <div className="min-h-screen pb-24">
+    <div className="min-h-screen bg-[#020617] text-slate-200 selection:bg-indigo-500/30 relative pb-24">
+      {/* HUD Background Elements */}
+      <div className="fixed inset-0 scifi-grid opacity-20 pointer-events-none"></div>
+      <div className="fixed inset-0 hex-bg opacity-10 pointer-events-none"></div>
+      
       <Header 
         isLive={isLive} 
         onToggleLive={() => setIsLive(!isLive)} 
