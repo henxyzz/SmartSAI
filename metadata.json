@@ -1,0 +1,7 @@
+{
+  "name": "Smart Scalper Pro",
+  "description": "Professional quantitative trading signal platform with multi-timeframe analysis, technical indicators (RSI, EMA, MACD), and real-time market insights.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Smart Scalper Pro | Next-Gen Neural Trading Terminal</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Experience the future of trading with Smart Scalper Pro. Neural-driven market analysis, real-time quantum charting, and institutional-grade signals for BTC, Gold, and Forex.">
+    <meta name="keywords" content="smart scalper pro, neural trading, quantitative trading, btc signals, gold signals, forex trading terminal, ai trading analysis">
+    <meta name="author" content="Smart Scalper Pro Team">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smart-scalper-pro.com/">
+    <meta property="og:title" content="Smart Scalper Pro | Quantum Terminal">
+    <meta property="og:description" content="Access institutional-grade trading signals powered by Neural Matrix Analysis. Join the elite network of quantitative traders.">
+    <meta property="og:image" content="https://api.dicebear.com/7.x/identicon/svg?seed=SSP_BANNER">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        window.process = window.process || { env: { API_KEY: "" } };
+    </script>
+    <style>
+        :root {
+            --neon-blue: #22d3ee;
+            --neon-purple: #8b5cf6;
+            --terminal-green: #10b981;
+            --neon-red: #f43f5e;
+            --indigo-glow: rgba(99, 102, 241, 0.4);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            user-select: none;
+        }
+        .font-orbitron { font-family: 'Orbitron', sans-serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+
+        .scifi-grid {
+            background-image: linear-gradient(to right, rgba(99, 102, 241, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(99, 102, 241, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+            mask-image: radial-gradient(circle at center, black, transparent 80%);
+        }
+
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .scanline {
+            width: 100%;
+            height: 4px;
+            z-index: 9999;
+            background: linear-gradient(0deg, rgba(99, 102, 241, 0) 0%, rgba(99, 102, 241, 0.1) 50%, rgba(99, 102, 241, 0) 100%);
+            position: fixed;
+            top: 0;
+            animation: scanline_move 6s linear infinite;
+            pointer-events: none;
+        }
+
+        @keyframes scanline_move {
+            0% { top: -10px; }
+            100% { top: 100%; }
+        }
+
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: #020617; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #6366f1; }
+
+        .hex-bg {
+            background-color: transparent;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%236366f1' fill-opacity='0.03' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9l11 6.35 11-6.35V31.1l-11 6.35-11-6.35V17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .neon-glow {
+            box-shadow: 0 0 10px rgba(99, 102, 241, 0.4), 0 0 40px rgba(99, 102, 241, 0.1);
+        }
+
+        .glass-nav {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-top: 1px solid rgba(99, 102, 241, 0.2);
+            box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.5);
+        }
+        
+        .custom-scrollbar::-webkit-scrollbar {
+          width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: rgba(15, 23, 42, 0.1);
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background: rgba(99, 102, 241, 0.2);
+          border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+          background: rgba(99, 102, 241, 0.4);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "framer-motion": "https://esm.sh/framer-motion@^12.34.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "lightweight-charts": "https://esm.sh/lightweight-charts@^5.1.0"
+  }
+}
+</script>
+</head>
+<body class="hex-bg">
+    <div class="scanline"></div>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
